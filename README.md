@@ -261,5 +261,5 @@ The implementation was developed from scratch in Python as a numerical hydrodyna
 
 **Santiago Hernández Díaz**
 
-PhD candidate in Astrophysics
+PhD candidate in Physics
 University of Tübingen
