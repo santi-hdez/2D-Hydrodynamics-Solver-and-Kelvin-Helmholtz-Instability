@@ -155,19 +155,19 @@ The default parameters are approximately:
 
 | Parameter                |                  Value |
 | ------------------------ | ---------------------: |
-| Grid                     |       \(250\times250\) |
-| Domain                   | \([-1,1]\times[-1,1]\) |
-| Adiabatic index          |         \(\gamma=1.4\) |
-| Initial pressure         |              \(p=2.5\) |
-| Outer density            |             \(\rho=1\) |
-| Central density          |             \(\rho=2\) |
-| Velocity magnitude       |              \(u_0=1\) |
-| Shear interfaces         |           \(y=\pm0.5\) |
-| Transition width         |               \(0.05\) |
-| Perturbation amplitude   |              \(A=0.1\) |
-| Perturbation modes       |                \(n=2\) |
-| Perturbation width       |        \(\sigma=0.12\) |
-| CFL number               |                \(0.5\) |
+| Grid                     |       $$250\times250$$ |
+| Domain                   | $$[-1,1]\times[-1,1]$$ |
+| Adiabatic index          |         $$\gamma=1.4$$ |
+| Initial pressure         |              $$p=2.5$$ |
+| Outer density            |             $$\rho=1$$ |
+| Central density          |             $$\rho=2$$ |
+| Velocity magnitude       |              $$u_0=1$$ |
+| Shear interfaces         |           $$y=\pm0.5$$ |
+| Transition width         |               $$0.05$$ |
+| Perturbation amplitude   |              $$A=0.1$$ |
+| Perturbation modes       |                $$n=2$$ |
+| Perturbation width       |        $$\sigma=0.12$$ |
+| CFL number               |                $$0.5$$ |
 | Boundary conditions      |               Periodic |
 | Default advection scheme |               van Leer |
 
