@@ -134,14 +134,14 @@ The transitions are smoothed using hyperbolic-tangent profiles rather than intro
 
 A small vertical velocity perturbation is introduced around the two shear interfaces:
 
-$$
+```math
 u_y = A \sin\left(\frac{2\pi n(x-x_{\min})}{L_x}\right)
 \left[
 \exp\left(-\frac{(y-y_0)^2}{\sigma^2}\right)
 -
 \exp\left(-\frac{(y+y_0)^2}{\sigma^2}\right)
 \right]
-$$
+```
 
 This perturbation seeds the instability. As the simulation evolves, the initially small perturbations grow and produce the characteristic vortical structures associated with the Kelvin–Helmholtz instability.
 
