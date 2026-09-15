@@ -239,11 +239,9 @@ The generated frames are combined into MP4 videos using FFmpeg.
 
 The density evolution shows the growth of the initially imposed perturbation at the two shear interfaces. The perturbations progressively distort the interfaces and develop into the characteristic vortical structures of the Kelvin–Helmholtz instability.
 
-<!-- Add a GIF or image from the simulation here -->
+![density](media/movie_rho.gif)
 
-```markdown
-![Kelvin-Helmholtz instability](media/kh_density.gif)
-```
+[Watch the full MP4 simulations](media/)
 
 ---
 
