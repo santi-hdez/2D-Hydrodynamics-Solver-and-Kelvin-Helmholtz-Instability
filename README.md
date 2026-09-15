@@ -37,11 +37,7 @@ $$
 where
 
 $$
-e_{\mathrm{tot}}
-=
-e_{\mathrm{int}}
-+
-\frac{1}{2}(u_x^2+u_y^2).
+e_{\mathrm{tot}} = e_{\mathrm{int}} + \frac{1}{2}\left(u_x^2 + u_y^2\right).
 $$
 
 The fluid is assumed to obey an ideal-gas equation of state,
@@ -233,10 +229,10 @@ kh_instability(
 
 During the simulation, the solver produces visualizations of
 
-* density \(\rho\),
-* velocity magnitude \(|\mathbf{u}|\),
-* specific total energy \(e_{\mathrm{tot}}\),
-* pressure \(p\).
+* density: $\rho$,
+* velocity magnitude: $|\mathbf{u}|$,
+* specific total energy: $e_{\mathrm{tot}}$,
+* pressure: $p$.
 
 The generated frames are combined into MP4 videos using FFmpeg.
 
