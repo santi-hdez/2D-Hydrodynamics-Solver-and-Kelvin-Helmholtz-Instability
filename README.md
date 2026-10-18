@@ -251,8 +251,6 @@ This project is primarily intended as a non-professional scientific-computing im
 
 The current solver separates advective transport from the pressure terms through operator splitting. This approach works well for the Kelvin–Helmholtz application shown here, but very strong shocks can require more robust conservative shock-capturing methods.
 
-The implementation was developed from scratch in Python as a numerical hydrodynamics project.
-
 ---
 
 ## Author
