@@ -41,7 +41,7 @@ $$
 e_{\mathrm{tot}} = e_{\mathrm{int}} + \frac{1}{2}\left(u_x^2 + u_y^2\right).
 $$
 
-The governing equations in conservative form are:
+The Euler equations in conservative form are:
 
 **Mass conservation**
 
