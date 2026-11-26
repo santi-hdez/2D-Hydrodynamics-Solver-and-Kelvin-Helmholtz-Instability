@@ -47,33 +47,26 @@ The governing equations in conservative form are:
 
 $$
 \frac{\partial \rho}{\partial t}
-+\frac{\partial (\rho u_x)}{\partial x}
-+\frac{\partial (\rho u_y)}{\partial y}=0.
++\nabla\cdot(\rho\mathbf{u})=0.
 $$
 
-**Momentum conservation along the x-direction**
+**Momentum conservation**
 
 $$
-\frac{\partial (\rho u_x)}{\partial t}
-+\frac{\partial (\rho u_x^2+p)}{\partial x}
-+\frac{\partial (\rho u_x u_y)}{\partial y}=0.
-$$
-
-**Momentum conservation along the y-direction**
-
-$$
-\frac{\partial (\rho u_y)}{\partial t}
-+\frac{\partial (\rho u_x u_y)}{\partial x}
-+\frac{\partial (\rho u_y^2+p)}{\partial y}=0.
+\frac{\partial(\rho\mathbf{u})}{\partial t}
++\nabla\cdot(\rho\mathbf{u}\otimes\mathbf{u})
++\nabla p=0.
 $$
 
 **Total energy conservation**
 
 $$
-\frac{\partial (\rho e_{\mathrm{tot}})}{\partial t}
-+\frac{\partial \left[u_x(\rho e_{\mathrm{tot}}+p)\right]}{\partial x}
-+\frac{\partial \left[u_y(\rho e_{\mathrm{tot}}+p)\right]}{\partial y}=0.
+\frac{\partial(\rho e_{\mathrm{tot}})}{\partial t}
++\nabla\cdot\left[(\rho e_{\mathrm{tot}}+p)\mathbf{u}\right]=0.
 $$
+
+where $\mathbf{u}=(u_x,u_y)^{\mathrm{T}}$ is the velocity
+vector and $\otimes$ denotes the tensor product.
 
 The system is closed by assuming an ideal-gas equation of state,
 
