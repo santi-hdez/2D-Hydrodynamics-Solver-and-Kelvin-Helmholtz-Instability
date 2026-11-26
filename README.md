@@ -12,7 +12,8 @@ The Kelvin–Helmholtz simulation demonstrates the development of vortical struc
 
 ## Physical Model
 
-The code evolves the two-dimensional compressible Euler equations.
+
+The code evolves the two-dimensional compressible Euler equations, which describe the conservation of mass, momentum and total energy in an inviscid fluid.
 
 The conserved variables are
 
@@ -34,17 +35,53 @@ $$
 Q_3 = \rho e_{\mathrm{tot}},
 $$
 
-where
+where $\rho$ is the mass density, $u_x$ and $u_y$ are the velocity components, and the specific total energy is defined as
 
 $$
 e_{\mathrm{tot}} = e_{\mathrm{int}} + \frac{1}{2}\left(u_x^2 + u_y^2\right).
 $$
 
-The fluid is assumed to obey an ideal-gas equation of state,
+The governing equations in conservative form are:
+
+**Mass conservation**
 
 $$
-p=(\gamma-1)\rho e_{\mathrm{int}}.
+\frac{\partial \rho}{\partial t}
++\frac{\partial (\rho u_x)}{\partial x}
++\frac{\partial (\rho u_y)}{\partial y}=0.
 $$
+
+**Momentum conservation along the x-direction**
+
+$$
+\frac{\partial (\rho u_x)}{\partial t}
++\frac{\partial (\rho u_x^2+p)}{\partial x}
++\frac{\partial (\rho u_x u_y)}{\partial y}=0.
+$$
+
+**Momentum conservation along the y-direction**
+
+$$
+\frac{\partial (\rho u_y)}{\partial t}
++\frac{\partial (\rho u_x u_y)}{\partial x}
++\frac{\partial (\rho u_y^2+p)}{\partial y}=0.
+$$
+
+**Total energy conservation**
+
+$$
+\frac{\partial (\rho e_{\mathrm{tot}})}{\partial t}
++\frac{\partial \left[u_x(\rho e_{\mathrm{tot}}+p)\right]}{\partial x}
++\frac{\partial \left[u_y(\rho e_{\mathrm{tot}}+p)\right]}{\partial y}=0.
+$$
+
+The system is closed by assuming an ideal-gas equation of state,
+
+$$
+p=(\gamma-1)\rho e_{\mathrm{int}},
+$$
+
+where $\gamma$ is the adiabatic index.
 
 ---
 
