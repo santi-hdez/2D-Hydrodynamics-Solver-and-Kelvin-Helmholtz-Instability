@@ -1,8 +1,8 @@
 # 2D Hydrodynamics Solver and Kelvin–Helmholtz Instability
 
-A two-dimensional compressible hydrodynamics solver written in Python, together with an application to the **Kelvin–Helmholtz instability**.
+This project is a two-dimensional compressible hydrodynamics solver written in Python, together with an application to the **Kelvin–Helmholtz instability**.
 
-The project was developed to explore the numerical solution of the Euler equations and the emergence of hydrodynamic instabilities from simple initial conditions.
+The project explores the emergence of hydrodynamic instabilities from simple initial conditions.
 
 The solver evolves density, momentum, and total energy on a Cartesian grid and includes several numerical advection schemes, configurable boundary conditions, CFL-controlled adaptive timesteps, and optional artificial viscosity.
 
@@ -246,8 +246,6 @@ The density evolution shows the growth of the initially imposed perturbation at 
 ---
 
 ## Numerical Considerations
-
-This project is primarily intended as a non-professional scientific-computing implementation of two-dimensional compressible hydrodynamics.
 
 The current solver separates advective transport from the pressure terms through operator splitting. This approach works well for the Kelvin–Helmholtz application shown here, but very strong shocks can require more robust conservative shock-capturing methods.
 
